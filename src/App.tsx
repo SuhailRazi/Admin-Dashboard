@@ -10,6 +10,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
 import Login from "./pages/login/Login";
+import './styles/global.scss';
 
 function App() {
 
