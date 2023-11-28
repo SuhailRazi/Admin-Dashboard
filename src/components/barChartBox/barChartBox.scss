@@ -1,0 +1,18 @@
+.barChartBox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+    h1{
+        flex: 1;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .chart{
+        flex: 2;
+        height: 100%;
+        width: 100%;
+    }
+}
