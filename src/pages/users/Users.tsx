@@ -29,18 +29,18 @@ const columns: GridColDef[] = [
     field: "email",
     type: "string",
     headerName: "Email",
-    width: 200,
+    width: 150,
   },
   {
     field: "phone",
     type: "string",
     headerName: "Phone",
-    width: 200,
+    width: 150,
   },
   {
     field: "createdAt",
     headerName: "Created At",
-    width: 200,
+    width: 150,
     type: "string",
   },
   {
@@ -58,7 +58,7 @@ const Users = () => {
         <h1>Users</h1>
         <button>Add new users</button>
       </div>
-      <DataTable columns={columns} rows={userRows} />
+      <DataTable slug="users" columns={columns} rows={userRows} />
     </div>
   );
 };
