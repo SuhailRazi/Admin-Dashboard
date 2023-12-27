@@ -1,42 +1,61 @@
-.topBox{
+@import "../../styles/responsive.scss";
 
-    h1{
-        margin-bottom: 20px;
+.topBox {
+  h1 {
+    margin-bottom: 20px;
+
+    @include xxl {
+      font-size: 24px;
     }
-    .list{
-        .listItem{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            .userSection{
-                display: flex;
-                gap: 20px;
-                img{
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                }
+  }
+  .list {
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .userSection {
+        display: flex;
+        gap: 20px;
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          object-fit: cover;
 
-                .userTexts{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-
-                    .username{
-                        font-size: 14px;
-                        font-weight: 500;
-                    }
-                    .email{
-                        font-weight: 12px;
-                    }
-                }
-            }
-
-            .amount{
-                font-weight: 500;
-            }
+          @include xxl {
+            display: none;
+          }
+          @include lg {
+            display: block;
+          }
         }
+
+        .userTexts {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .username {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .email {
+            font-weight: 12px;
+
+            @include xxl {
+              display: none;
+            }
+            @include lg {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .amount {
+        font-weight: 500;
+      }
     }
+  }
 }
